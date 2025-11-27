@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "platform": "Nintendo Switch",
+    "genre": "Action-Adventure",
+    "releaseYear": 2017,
+    "developer": "Nintendo",
+    "rating": 10,
+    "price": 59.99,
+    "image": "images/zelda.jpg",
+    "description": "Explora un mundo abierto lleno de aventuras y secretos.",
+    "trailer": "https://www.youtube.com/watch?v=1rPxiXXxftE"
+  },
+  {
+    "id": 2,
+    "name": "God of War Ragnarok",
+    "platform": "PlayStation 5",
+    "genre": "Action",
+    "releaseYear": 2022,
+    "developer": "Santa Monica Studio",
+    "rating": 9.5,
+    "price": 69.99,
+    "image": "images/gow_ragnarok.jpg",
+    "description": "Kratos y Atreus enfrentan nuevos desafíos en la mitología nórdica.",
+    "trailer": "https://www.youtube.com/watch?v=EE-4GvjKcfs"
+  }
+]
