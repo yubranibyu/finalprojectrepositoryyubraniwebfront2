@@ -1,28 +1,95 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GameVerse Hub</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>GameVerse Hub</h1>
-    <input type="text" id="searchInput" placeholder="Type your game">
-    <select id="platformFilter">
-      <option value="">All plataforms</option>
-      <option value="PC">PC</option>
-      <option value="PlayStation 5">PlayStation 5</option>
-      <option value="Xbox">Xbox</option>
-      <option value="Nintendo Switch">Nintendo Switch</option>
-    </select>
+
+  <!-- TOP BAR WITH SEARCH AND OPTIONS -->
+  <header class="top-bar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.jpg" alt="GameVerse Hub Logo"/></a>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for games..."/>
+    </div>
+    <div class="user-options">
+      <a href="#">Help</a>
+      <a href="#">Sign In</a>
+      <a href="cart.html">Cart 🛒<span id="cart-count"></span></a>
+      
+    </div>
   </header>
 
-  <main>
-    <div id="gameList" class="game-list"></div>
-  </main>
+  <!-- MAIN NAVIGATION MENU -->
+  <nav class="main-menu">
+  <ul class="nav_links">
+  <li><a href="games.html">All Games</a></li>
 
-  <script src="scripts/main.js"></script>
+  <!-- PC -->
+  <li><a href="games.html?platform=PC">PC</a></li>
+
+  <!-- PlayStation -->
+  <li><a href="games.html?platform=PlayStation 5">PlayStation 5</a></li>
+  <li><a href="games.html?platform=PS4">PlayStation 4</a></li>
+
+  <!-- Xbox -->
+  <li><a href="games.html?platform=Xbox Series X">Xbox Series X</a></li>
+  <li><a href="games.html?platform=Xbox One">Xbox One</a></li>
+
+  <!-- Switch -->
+  <li><a href="games.html?platform=Nintendo Switch">Nintendo Switch</a></li>
+</ul>
+
+</nav>
+
+  </ul>
+</nav>
+
+
+  <!-- SLIDER SECTION FOR NEW RELEASES -->
+  <section class="slider">
+    <h2>🆕 New Games</h2>
+    <div class="slider-container">
+      <!-- Populated dynamically via JavaScript -->
+    </div>
+  </section>
+
+  <!-- UPCOMING GAMES -->
+  <section class="launches">
+    <h2>🚀 Upcoming Launches</h2>
+    <div class="grid-launches">
+      <!-- Populated dynamically via JavaScript -->
+    </div>
+  </section>
+
+  <!-- SPECIAL OFFERS -->
+  <section class="offers">
+    <h2>🔥 Special Offers</h2>
+    <div class="grid-offers">
+      <!-- Populated dynamically via JavaScript -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-contact">
+      <a href="https://wa.me/XXXXXXXXXXX" target="_blank" class="btn-whatsapp">💬 Contact Us via WhatsApp</a>
+      <p>📍 Address: Gamer Street #123, Geek City</p>
+      <p>🕒 Opening Hours: Mon - Fri | 9:00 AM - 6:00 PM</p>
+      <p>💳 Accepted Payments: Visa, Mastercard, PayPal, PIX</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalle del Juego</title>
+  <title>Game Detail</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <h1 id="gameTitle">Juego</h1>
-    <a href="index.html">← Volver al listado</a>
+    <a href="games.html">← Back to games</a>
+     <div class="logo">
+      <a href="index.html"><img src="images/logo.jpg" alt="GameVerse Hub Logo"/></a>
+    </div>
+    
+    <div class="user-options">
+      <a href="#">Help</a>
+      <a href="#">Sign In</a>
+      <a href="cart.html">Cart 🛒<span id="cart-count">0</span></a>
+      
+    </div>
+    <h1 id="gameTitle">Game Detail</h1>
   </header>
 
-  <main>
-    <img id="gameImage" src="" alt="Imagen del juego">
-    <p id="gameDescription"></p>
-    <ul>
-      <li><strong>Plataforma:</strong> <span id="gamePlatform"></span></li>
-      <li><strong>Género:</strong> <span id="gameGenre"></span></li>
-      <li><strong>Año de lanzamiento:</strong> <span id="gameYear"></span></li>
-      <li><strong>Desarrollador:</strong> <span id="gameDeveloper"></span></li>
-      <li><strong>Rating:</strong> <span id="gameRating"></span>/10</li>
-      <li><strong>Precio:</strong> $<span id="gamePrice"></span></li>
-      <li><strong>Trailer:</strong> <a id="gameTrailer" href="" target="_blank">Ver video</a></li>
-    </ul>
+  <main id="game-detail-container">
+    <!-- Content will be filled by detail.js -->
   </main>
 
-  <script src="js/detail.js"></script>
+  <script src="scripts/detail.js"></script>
+  <script src="scripts/cart.js"></script>
 </body>
 </html>

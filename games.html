@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVerse Hub</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    
+    <a href="index.html"><img src="images/logo.jpg" alt="GameVerse Hub Logo" width="150"></a>
+    <h1>GameVerse Hub</h1>
+    <input type="text" id="searchInput" placeholder="Type your game">
+    <select id="platformFilter">
+      <option value="">All plataforms</option>
+      <option value="PC">PC</option>
+      <option value="PlayStation 5">PlayStation 5</option>
+      <option value="PS4">PS4</option>
+      <option value="Xbox Series X">Xbox Series X</option>
+      <option value="Xbox One">Xbox One</option>
+      <option value="Nintendo Switch">Nintendo Switch</option>
+    </select>
+    <div class="user-options">
+      <a href="#">Help</a>
+      <a href="#">Sign In</a>
+      <a href="cart.html">Cart 🛒<span id="cart-count">0</span></a>
+      
+    </div>
+  </header>
+
+  <main>
+    <div id="gameList" class="game-list"></div>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
