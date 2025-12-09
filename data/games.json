@@ -12,6 +12,7 @@
   "description": "A groundbreaking VR shooter set between Half-Life and Half-Life 2.",
   "trailer": "https://www.youtube.com/watch?v=O2W0N3uKXmo",
   "onSale": false
+  
 },
 {
   "id": 17,
@@ -150,6 +151,8 @@
     "rating": 9,
     "price": 19.99,
     "image": "images/ps4/uncharted4.png"
+    ,
+  "offer": true
   },
   {
     "id": 12,
@@ -204,7 +207,8 @@
     "developer": "Insomniac Games",
     "rating": 9,
     "price": 19.99,
-    "image": "images/ps4/spiderman.png"
+    "image": "images/ps4/spiderman.png",
+  "offer": true
   },
   {
     "id": 17,
@@ -248,7 +252,8 @@
     "developer": "Capcom",
     "rating": 9,
     "price": 19.99,
-    "image": "images/ps4/monster_hunter_world.png"
+    "image": "images/ps4/monster_hunter_world.png",
+  "offer": true
   }
 ,
   {
@@ -448,7 +453,8 @@
     "developer": "Crystal Dynamics",
     "rating": 9,
     "price": 14.99,
-    "image": "images/xone/rise_tombraider.png"
+    "image": "images/xone/rise_tombraider.png",
+  "offer": true
   },
   {
     "id": 39,
@@ -723,7 +729,47 @@
     "trailer": "https://www.youtube.com/watch?v=E3Huy2cdih0",
     "onSale": false
   }
+,
+  {
+    "id": 101,
+    "name": "Eclipse Protocol",
+    "price": 69.99,
+    "platform": "PS5",
+    "image": "images/upcoming/eclipse_protocol.png",
+    "onSale": false,
+    "upcoming": true
+  },
+  {
+    "id": 102,
+    "name": "Legends of Aether",
+    "price": 59.99,
+    "platform": "Xbox Series X",
+    "image": "images/upcoming/legends_of_aether.png",
+    "onSale": false,
+    "upcoming": true
+  },
+  {
+    "id": 103,
+    "name": "Neon Drift: Tokyo Rush",
+    "price": 49.99,
+    "platform": "Nintendo Switch",
+    "image": "images/upcoming/neon_drift_tokyo_rush.png",
+    "onSale": false,
+    "upcoming": true
+  },
+  {
+    "id": 104,
+    "name": "Ironfall: Reborn",
+    "price": 69.99,
+    "platform": "PC",
+    "image": "images/upcoming/ironfall_reborn.png",
+    "onSale": false,
+    "upcoming": true
+  }
+
+
 ]
+
 
 
 

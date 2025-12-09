@@ -1,35 +1,47 @@
 // scripts.js
 // Render game cards dynamically
 
-function renderGames(gamesList) {
-  const container = document.getElementById("games-container");
 
-  container.innerHTML = ""; // clear previous items
+// === Hero Slider Logic ===
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+const dotsContainer = document.querySelector(".slider-dots");
 
-  gamesList.forEach(game => {
-    const card = document.createElement("div");
-    card.classList.add("game-card");
+// Create dots dynamically
+slides.forEach((_, index) => {
+  const dot = document.createElement("span");
+  if (index === 0) dot.classList.add("active-dot");
+  dot.addEventListener("click", () => goToSlide(index));
+  dotsContainer.appendChild(dot);
+});
 
-    card.innerHTML = `
-      <img src="${game.image}" alt="${game.name}">
-      <h3>${game.name}</h3>
-      <p><strong>Platform:</strong> ${game.platform}</p>
-      <p><strong>Genre:</strong> ${game.genre}</p>
-      <p><strong>Price:</strong> $${game.price}</p>
+const dots = document.querySelectorAll(".slider-dots span");
 
-      <button class="add-cart-btn"
-        onclick='addToCart({
-          id: ${game.id},
-          name: "${game.name}",
-          price: ${game.price},
-          image: "${game.image}"
-        })'
-      >
-        Add to Cart
-      </button>
-    `;
+function updateSlider() {
+  const slider = document.querySelector(".slides-container");
+  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
 
-    container.appendChild(card);
-  });
+  dots.forEach(dot => dot.classList.remove("active-dot"));
+  dots[currentSlide].classList.add("active-dot");
 }
 
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  updateSlider();
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  updateSlider();
+}
+
+function goToSlide(n) {
+  currentSlide = n;
+  updateSlider();
+}
+
+document.querySelector(".next").addEventListener("click", nextSlide);
+document.querySelector(".prev").addEventListener("click", prevSlide);
+
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);

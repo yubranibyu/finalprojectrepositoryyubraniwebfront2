@@ -145,6 +145,14 @@ function updateTotal() {
   totalContainer.textContent = "$" + total.toFixed(2);
 }
 
+function clearCart() {
+  localStorage.removeItem("cart");   
+  updateCartCount();                 
+  renderCartPage();                  
+  showToast("Cart cleared");         
+}
+
+
 /* ================================
    INIT ON PAGE LOAD
    ================================ */

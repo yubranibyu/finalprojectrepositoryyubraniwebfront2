@@ -5,22 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GameVerse Hub</title>
   <link rel="stylesheet" href="css/styles.css"/>
-  <script src="scripts/main.js" defer></script>
+  
   <script src="scripts/scripts.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 <body>
 
   <!-- TOP BAR WITH SEARCH AND OPTIONS -->
   <header class="top-bar">
     <div class="logo">
-      <a href="index.html"><img src="images/logo.jpg" alt="GameVerse Hub Logo"/></a>
+      <a href="index.html"><img src="images/logo.png" alt="GameVerse Hub Logo"></a>
     </div>
-    <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Search for games..."/>
-    </div>
+    <h1 class="gameshubh1">Welcome to Gameshub GameVerse</h1>
     <div class="user-options">
-      <a href="#">Help</a>
-      <a href="#">Sign In</a>
+      <a href="https://askaboutgames.com/">Help</a>
+      <a href="forms.html">Sign In</a>
       <a href="cart.html">Cart 🛒<span id="cart-count"></span></a>
       
     </div>
@@ -54,27 +53,57 @@
 
   <!-- SLIDER SECTION FOR NEW RELEASES -->
   <section class="slider">
-    <h2>🆕 New Games</h2>
-    <div class="slider-container">
-      <!-- Populated dynamically via JavaScript -->
+    <section class="hero-slider">
+  <div class="slides-container">
+    <div class="slide active">
+      <img src="images/slider1.avif" alt="Featured Game 1" >
+      <div class="slide-info">
+        <h2>Exclusive Release</h2>
+        <p>Discover the most anticipated title of the year.</p>
+      </div>
     </div>
+
+    <div class="slide">
+      <img src="images/slider2.webp" alt="Featured Game 2">
+      <div class="slide-info">
+        <h2>Top Rated Game</h2>
+        <p>Experience unmatched gameplay and storytelling.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/slider3.jpg" alt="Featured Game 3">
+      <div class="slide-info">
+        <h2>New Adventure</h2>
+        <p>Embark on an unforgettable journey.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation arrows -->
+  <button class="slider-btn prev">❮</button>
+  <button class="slider-btn next">❯</button>
+
+  <!-- Dots -->
+  <div class="slider-dots"></div>
+</section>
+
+
   </section>
 
-  <!-- UPCOMING GAMES -->
-  <section class="launches">
-    <h2>🚀 Upcoming Launches</h2>
-    <div class="grid-launches">
-      <!-- Populated dynamically via JavaScript -->
-    </div>
-  </section>
+  <!-- UPCOMING GAMES SECTION -->
+<section class="upcoming-section">
+  <h2>Upcoming Games</h2>
+  <div id="upcomingGames"></div>
+</section>
+
+
 
   <!-- SPECIAL OFFERS -->
-  <section class="offers">
-    <h2>🔥 Special Offers</h2>
-    <div class="grid-offers">
-      <!-- Populated dynamically via JavaScript -->
-    </div>
-  </section>
+<section class="offers-section">
+  <h2>🔥 Special Offers</h2>
+  <div id="specialOffers" class="offers-grid"></div>
+</section>
 
   <!-- FOOTER -->
   <footer>
